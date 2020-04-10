@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- node
+before_deploy:
+- npm run build
+deploy:
+  skip_cleanup: true
+  provider: npm
+  email: malimehul.dev@gmail.com
+  api_key:
+    secure: MTjl94idEFsyhuOvhU7wOyV9t9A+y6Eii1TS0TMUPvyzS6LOJdgmNO3y4uFoNSrfnSvRheORH9Tw2kbuq3uf4DkIAZLGngmdYZYckzh81R64xg7D7qK3cg6ZxAKd+Y74TmGMHVUMsEEYU3pwDbaZDQz3QqfxyoCxpuQ0Em669fAX0pGs0jgkSzEo2x9HGlo93XIgKFVXk7vNWvP6Sn9r529p/VwZTEG8HW8bLGIFuPeKZ1QXb7W1gFh4W2KUvrSs1gdVc4DWA/nUYuQ9mWYZQH8xsXWqEOLzkQHRwI/nGxVUQaxtFJDud4y5Fqb69r9tgT0qLbsffhA97FFTEsgTI+7ZwrTaM7pMxSe3y/PhWirclqG3ydKDF9T0CTjOeStZLmbv7yZG1PBa2QVIqnPwDN+pC5f94eQaF+jaqgwTNqa8Xq7+38mLlwH60hab4Ia9V4DTH4Kgdr1oR4zoG/3/101EkA5uK0PK1XEx4zvFlwgokgqp0Yh3vXa2b+r1zoCvRUqllk7wWB58U64b8wfA6VW9jfRKZUzdzZz5DH5byWhEfIWrzZMUVNmebkX1pufL4N7SqFT83MOXuIZCmdFB5HTKyBXOPBwhn6Ep9ld9jA3ub+QtRpI5lb9NV0crEYlR3/upDbGXKk34Igyu1tuUthuVHS0pA1V+TSIblv37dCY=
+  on:
+    tags: true
+    repo: mehulmali/api-npm-pack
