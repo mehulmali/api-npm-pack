@@ -14,6 +14,7 @@ function maskUSPhone(phone) {
     return phone;
   }
 
+
   // returning the masked value
   const codeArea = phone.substring(0, 3);
   const prefix = phone.substring(3, 6);
