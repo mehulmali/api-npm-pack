@@ -1,0 +1,25 @@
+{
+  "name": "api-npm-pack",
+  "version": "1.0.0",
+  "description": "A NPM package that access API.",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehulmali/api-npm-pack.git"
+  },
+  "keywords": [
+    "npm",
+    "node",
+    "package",
+    "API"
+  ],
+  "author": "Mehul Mali",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mehulmali/api-npm-pack/issues"
+  },
+  "homepage": "https://github.com/mehulmali/api-npm-pack#readme"
+}
